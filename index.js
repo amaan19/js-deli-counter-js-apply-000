@@ -2,6 +2,17 @@ function takeANumber (array, Name) {
   array.push(Name)
   return `Welcome, ${Name}. You are number ${array.length} in line.`;
 }
+function haveANumber (array) {
+  let i = 0
+  array.push(++i)
+  return i
+}
+
+haveANumber() // 1 
+haveANumber() // 1 
+haveANumber() // 1 
+
+
 function nowServing (array) {
   if (array.length > 0) {
     return `Currently serving ${array.shift()}.`;
